@@ -3,9 +3,9 @@
 
 struct Student
 {
-	char name[30];
+	char name[50];
 	int roll;
-	int marks;
+	float marks;
 };
 
 void main()
@@ -26,7 +26,8 @@ void main()
 		scanf("%d",&s[i].roll);
 
 		printf("Enter Marks : ");
-		scanf("%d",&s[i].marks);
+		scanf(" %f",&s[i].marks);
+		fflush(stdin);
 	}
 
 	printf("\n---Student Details---\n");
@@ -35,7 +36,7 @@ void main()
 		printf("\nStudent %d : ",i+1);
 		printf("\nName : %s",s[i].name);
 		printf("\nRoll no : %d",s[i].roll);
-		printf("\nMarks : %d\n",s[i].marks);
+		printf("\nMarks : %.2f\n",s[i].marks);
 	}
 	getch();
 }
