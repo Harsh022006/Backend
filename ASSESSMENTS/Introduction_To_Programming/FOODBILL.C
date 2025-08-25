@@ -23,6 +23,8 @@ void main()
 	{
 		clrscr();
 		delay(1000);
+
+		//display the menu
 		printf("\n\t\tFOOD BILLING SYSTEM");
 		printf("\n\t************************************");
 
@@ -31,8 +33,10 @@ void main()
 		printf("\n\n\t3.Sandwich	Rs. 80");
 		printf("\n\n\t4.Coke		Rs. 50");
 
+		//Take choice
 		printf("\n\nEnter Choice (1-4) : ");
 		scanf("%d",&choice);
+		//Take Quantity
 		printf("Enter Quantity : ");
 		scanf("%d",&qty);
 
@@ -66,6 +70,7 @@ void main()
 				break;
 		}
 
+		//calculate the Cost
 		amount = qty * price;
 		total += amount;
 
