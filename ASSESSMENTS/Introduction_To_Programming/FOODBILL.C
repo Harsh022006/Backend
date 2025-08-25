@@ -5,6 +5,7 @@
 
 void main()
 {
+	//Declare variebles
 	int choice,qty,price = 0,total = 0,amount;
 	int i=0;
 	int j;
@@ -17,6 +18,7 @@ void main()
 	printf("\n\t\t\tFOOD BILLING SYSTEM");
 	printf("\n\t\t********************************");
 
+	//Uses a do-while loop to keep asking if use wants more
 	do
 	{
 		clrscr();
@@ -34,6 +36,7 @@ void main()
 		printf("Enter Quantity : ");
 		scanf("%d",&qty);
 
+		//Using Switch case for chhose any one
 		switch(choice)
 		{
 			case 1:
@@ -83,7 +86,8 @@ void main()
 	}while(more == 'y' || more == 'Y');
 
 	delay(1000);
-	printf("\n\n\tFINAL BILL");
+	//Printing Final Bill
+	printf("\n\n\t\t\t   FINAL BILL");
 
 	printf("\n\t*************************************************");
 
@@ -91,6 +95,7 @@ void main()
 
 	printf("\n\t*************************************************");
 
+	//Use for loop for details
 	for(j=0;j<i;j++)
 	{
 		printf("\n\t| %-10s\t%d\t\t%d\t%d |",items[j],qtyArr[j],priceArr[j],amtArr[j]);
