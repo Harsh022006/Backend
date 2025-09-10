@@ -1,7 +1,8 @@
 #include <iostream.h>
 #include <conio.h>
 
-void main() {
+void main() 
+{
     clrscr();
 
     int num;
@@ -11,7 +12,8 @@ void main() {
 
     cout << "\nMultiplication Table of " << num << ":\n";
 
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= 10; i++) 
+    {
         cout << num << " x " << i << " = " << (num * i) << endl;
     }
 

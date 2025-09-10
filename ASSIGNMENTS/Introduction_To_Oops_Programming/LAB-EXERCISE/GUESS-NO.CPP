@@ -1,7 +1,8 @@
 #include <iostream.h>
 #include <conio.h>
 
-void main() {
+void main() 
+{
     clrscr();
 
     int secretNumber = 45;  
