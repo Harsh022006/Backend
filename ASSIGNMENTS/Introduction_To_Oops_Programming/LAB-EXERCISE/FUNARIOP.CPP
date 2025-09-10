@@ -1,26 +1,31 @@
 #include <iostream.h>
 #include <conio.h>
 
-int add(int a, int b) {
+int add(int a, int b)
+{
     return a + b;
 }
 
-int subtract(int a, int b) {
+int subtract(int a, int b)
+ {
     return a - b;
-}
+ }
 
-int multiply(int a, int b) {
+int multiply(int a, int b)
+{
     return a * b;
 }
 
-float divide(int a, int b) {
+float divide(int a, int b)
+{
     if (b != 0)
-        return (float)a / b;   
+	return (float)a / b;
     else
-        return 0;   
+	return 0;
 }
 
-void main() {
+void main()
+{
     clrscr();
 
     int num1, num2, choice;
@@ -40,29 +45,30 @@ void main() {
     cout << "Enter your choice: ";
     cin >> choice;
 
-    switch(choice) {
-        case 1:
-            result = add(num1, num2);
-            cout << "Result = " << result;
-            break;
-        case 2:
-            result = subtract(num1, num2);
-            cout << "Result = " << result;
-            break;
-        case 3:
-            result = multiply(num1, num2);
-            cout << "Result = " << result;
-            break;
-        case 4:
-            if (num2 != 0) {
-                result = divide(num1, num2);
-                cout << "Result = " << result;
-            } else {
-                cout << "Error! Division by zero not allowed.";
-            }
-            break;
-        default:
-            cout << "Invalid choice!";
+    switch(choice)
+    {
+	case 1:
+	    result = add(num1, num2);
+	    cout << "Result = " << result;
+	    break;
+	case 2:
+	    result = subtract(num1, num2);
+	    cout << "Result = " << result;
+	    break;
+	case 3:
+	    result = multiply(num1, num2);
+	    cout << "Result = " << result;
+	    break;
+	case 4:
+	    if (num2 != 0) {
+		result = divide(num1, num2);
+		cout << "Result = " << result;
+	    } else {
+		cout << "Error! Division by zero not allowed.";
+	    }
+	    break;
+	default:
+	    cout << "Invalid choice!";
     }
 
     getch();
