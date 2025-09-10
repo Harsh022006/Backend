@@ -6,7 +6,7 @@ void main() {
 
     int rows;
 
-    cout << "Enter number of rows for the triangle: ";
+    cout << "\nEnter number of rows for the triangle: ";
     cin >> rows;
 
     cout << "\nRight-Angled Triangle:\n";
