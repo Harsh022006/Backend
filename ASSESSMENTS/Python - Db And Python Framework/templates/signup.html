@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Signup</title></head>
+<body>
+<h2>Signup</h2>
+<form method="post">
+    {% csrf_token %}
+    <input name="username" placeholder="Username"><br><br>
+    <input name="password" type="password" placeholder="Password"><br><br>
+    <select name="role">
+        <option value="PATIENT">Patient</option>
+        <option value="DOCTOR">Doctor</option>
+    </select><br><br>
+    <button type="submit">Signup</button>
+</form>
+</body>
+</html>
