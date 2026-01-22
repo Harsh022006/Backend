@@ -1,0 +1,13 @@
+from rest_framework import viewsets
+from .models import Student, Course
+from .serializers import StudentSerializer, CourseSerializer
+
+
+class CourseViewSet(viewsets.ModelViewSet):
+    queryset = Course.objects.all().order_by("id")
+    serializer_class = CourseSerializer
+
+
+class StudentViewSet(viewsets.ModelViewSet):
+    queryset = Student.objects.all().order_by("id")
+    serializer_class = StudentSerializer
